@@ -1,9 +1,10 @@
-package com.martin.loginsample
+package com.martin.loginsample.features.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.martin.loginsample.R
 
-class MainActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
