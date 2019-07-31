@@ -2,7 +2,8 @@ package com.martin.loginsample.networking
 
 import com.martin.loginsample.networking.models.LoginRequest
 import com.martin.loginsample.networking.models.LoginResponse
-import retrofit2.Call
+import io.reactivex.Single
+import retrofit2.Response
 import retrofit2.http.*
 import retrofit2.http.POST
 
@@ -10,6 +11,6 @@ import retrofit2.http.POST
  * Created by martinmistery on 07/28/19.
  */
 interface APIRequest {
-    @POST("auth")
-    fun login(@Body body: LoginRequest): Call<LoginResponse>
+    @POST("login")
+    fun login(@Body body: LoginRequest): Single<Response<LoginResponse>>
 }

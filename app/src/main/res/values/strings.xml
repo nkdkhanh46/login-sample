@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Login Sample</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="error_login_empty_email">Email cannot be empty.</string>
+    <string name="ok">OK</string>
+    <string name="error_login_empty_password">Password cannot be empty.</string>
+    <string name="error_login_unknown_error">Login failed. Please try again.</string>
+    <string name="error_login_invalid_account">Wrong email or password.</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="error_network_unavailable">No internet connection. Please check your connectivity and try again.</string>
+    <string name="welcome">Welcome</string>
 </resources>

@@ -8,11 +8,18 @@ import javax.inject.Singleton
 @Singleton
 class SessionManagerImpl @Inject constructor(private val sharedPreferences: AppSharedPreferences): SessionManager {
 
+    var authToken = ""
+
+    init {
+        authToken = sharedPreferences.getToken()
+    }
+
     override fun getToken(): String {
-        return ""
+        return authToken
     }
 
     override fun updateToken(token: String) {
-
+        authToken = token
+        sharedPreferences.setToken(token)
     }
 }
