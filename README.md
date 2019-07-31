@@ -1,5 +1,5 @@
 # Login Sample
-An sample Android application which contains login feature using Retrofit and RxAndroid
+A sample Android application which implement Login feature using Retrofit and RxAndroid
 
 
 ## Build apk file
